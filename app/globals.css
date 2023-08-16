@@ -18,10 +18,27 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
+}
+.banner-image{
+  height:600px;
+}
+
+.driver-section{
+  position:relative;
+  margin-top:-90px;
+}
+.student-section{
+  position:relative;
+  margin-top:90px;
+}
+@media only screen and (max-width: 600px) {
+  .driver-section{
+    position:relative;
+    margin-top:-0px;
+  }
+  .student-section{
+    position:relative;
+    margin-top:0px;
+  }
 }

@@ -24,7 +24,7 @@ export default function Banner() {
                 duration: 9000,
                 isClosable: true,
               })
-              router.push('/buses');
+              router.push('/filterbuses');
         }
         else {
             toast({
@@ -43,7 +43,7 @@ export default function Banner() {
         setTo(e.target.value)
     }
     return (
-        <div className="mt-20  w-full">
+        <div className="mt-10 lg:mt-20  w-full">
             <Image src={banner} alt="" srcset="" className="w-full banner-image" />
             <div className="w-full lg:w-3/4 lg:mx-auto banner-search-section h-64  lg:flex gap-6  ">
                 <div className="w-full lg:w-3/4 bg-violet-900 h-62 border rounded-lg ">

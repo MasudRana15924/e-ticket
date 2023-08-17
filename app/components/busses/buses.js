@@ -29,12 +29,12 @@ export default function Buses() {
     }
     return (
 
-        <div className=" pt-12 mb-10 mt-28">
+        <div className=" pt-12 mb-10 mt-16 lg:mt-28">
             <div className="flex justify-between w-3/4 mx-auto ">
                 <h1 className=" font-bold text-4xl lg:text-3xl text-start">Our Buses </h1>
             </div>
             <div
-                className="grid grid-cols-12 gap-4  w-3/4 mx-auto  lg:px-0 min-h-[300px] mt-10 md:mt-16 lg:mt-12 " >
+                className="grid grid-cols-12 gap-4  lg:w-3/4 mx-auto  lg:px-0 min-h-[300px] mt-10 md:mt-16 lg:mt-12 " >
                 {content}
             </div>
             <div className=" w-1/4 mx-auto ">

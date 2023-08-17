@@ -45,7 +45,7 @@ export default function Login() {
     //     }
     // }, [token, navigate,message]);
     return (
-        <div className=" mt-16 lg:mt-48">
+        <div className="pl-2 pr-2 lg:p-0 mt-16 lg:mt-48">
 
             {/* <div className="lg:w-2/4 mx-auto">
                     <div className="  p-8">

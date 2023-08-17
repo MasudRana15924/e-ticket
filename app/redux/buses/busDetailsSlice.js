@@ -1,5 +1,6 @@
+import { publicGetSingle } from '@/app/utitlities/apiCaller';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import { publicGetSingle } from '../utilities/apiCaller';
+
 
 
 const initialState = {

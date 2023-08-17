@@ -33,6 +33,9 @@ body {
   margin-top:90px;
 }
 @media only screen and (max-width: 600px) {
+  .banner-image{
+    height:300px;
+  }
   .driver-section{
     position:relative;
     margin-top:-0px;

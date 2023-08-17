@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Helpline() {
   return (
-    <div className="mt-12 lg:mt-16 lg:w-3/4 mx-auto">
+    <div className=" lg:mt-16 pl-2 pr-2 lg:p-0 lg:w-3/4 mx-auto">
       <div class="bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-0 lg:px-0">
           <div class="mx-auto max-w-2xl lg:mx-0">
@@ -33,7 +33,7 @@ export default function Helpline() {
                       Mr ABC
                     </a>
                   </p>
-                  <p class="text-gray-600">Director , Transport </p>
+                  <p class="text-violet-500">Director , Transport </p>
                   <p class="text-gray-600">call +880123456789 </p>
                 </div>
               </div>
@@ -61,7 +61,7 @@ export default function Helpline() {
                       Mr XYZ
                     </a>
                   </p>
-                  <p class="text-gray-600">A.DirectorTransport </p>
+                  <p class="text-violet-500">A.DirectorTransport </p>
                   <p class="text-gray-600">call +880123456789 </p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function Helpline() {
                       Mr DEF
                     </a>
                   </p>
-                  <p class="text-gray-600">Head, Ticket Management</p>
+                  <p class="text-violet-500">Head, Ticket Management</p>
                   <p class="text-gray-600">call +880123456789 </p>
                 </div>
               </div>

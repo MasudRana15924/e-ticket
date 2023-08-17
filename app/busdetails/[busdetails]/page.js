@@ -25,22 +25,6 @@ export default function BusDetails({ params }) {
         dispatch(fetchBus(busId))
     }, [dispatch, busId])
     const { bus, isLoading, isError, } = useSelector(state => state.busDetails.bus);
-    const breadcrumbs = [
-        <Link underline="hover" key="1" color="inherit" href="/" >
-            Home
-        </Link>,
-        <Link
-            underline="hover"
-            key="2"
-            color="inherit"
-            href="/material-ui/getting-started/installation/"
-        >
-            Buses
-        </Link>,
-        <Typography key="3" color="text.primary">
-            {busId}
-        </Typography>
-    ];
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -62,10 +46,26 @@ export default function BusDetails({ params }) {
                 separator={<NavigateNextIcon fontSize="small" />}
                 aria-label="breadcrumb"
             >
-                {breadcrumbs}
+                {/* {breadcrumbs} */}
+                <Link underline="hover" key="1" color="inherit" href="/" >
+                    Home
+                </Link>,
+                <Link
+                    underline="hover"
+                    key="2"
+                    color="inherit"
+                    href="/material-ui/getting-started/installation/"
+                >
+                    Buses
+                </Link>,
+               {
+                bus?  <Typography key="3" color="text.primary">
+                {bus.name}
+            </Typography>:<Skeleton variant="text" width={180} sx={{ fontSize: '1rem' }} />
+               }
             </Breadcrumbs>
             <div >
-                <div className="w-full mt-16 mb-5  flex">
+                <div className="w-full mt-16 mb-5  lg:flex">
                     <div className="w-3/4 ">
 
                         {

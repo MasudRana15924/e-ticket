@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Bus from "./bus";
 import { useEffect, useState } from "react";
 import { fetchBuses } from "@/app/redux/buses/busesSlice";
-
+import Loader from '../loader/loader'
 export default function Buses() {
     const dispatch = useDispatch();
     const [visible, setVisible] = useState(3);
@@ -12,6 +12,7 @@ export default function Buses() {
         setVisible(visible + 3);
     };
     const { buses } = useSelector(state => state.buses.buses);
+    const { isLoading} = useSelector(state => state.buses);
     useEffect(() => {
         dispatch(fetchBuses());
     }, [dispatch])
@@ -33,10 +34,14 @@ export default function Buses() {
             <div className="flex justify-between w-3/4 mx-auto ">
                 <h1 className=" font-bold text-4xl lg:text-3xl text-start">Our Buses </h1>
             </div>
-            <div
+            {
+                isLoading ? <div>
+                    <Loader></Loader>
+                </div>:<div
                 className="grid grid-cols-12 gap-4  lg:w-3/4 mx-auto  lg:px-0 min-h-[300px] mt-10 md:mt-16 lg:mt-12 " >
                 {content}
             </div>
+            }
             <div className=" w-1/4 mx-auto ">
                 {visible && (buses?.length > 0 && (
                     <button onClick={loadMore}

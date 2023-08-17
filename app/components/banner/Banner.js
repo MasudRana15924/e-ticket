@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 import { useToast } from "@chakra-ui/toast";
 export default function Banner() {
     const router = useRouter();
-    const toast = useToast()
+    const toast = useToast();
     const [from, setFrom] = useState('');
     const [to, setTo] = useState('')
     const dispatch = useDispatch();
